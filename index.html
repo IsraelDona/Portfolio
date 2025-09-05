@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1>BOSSIKPONON <span>Israel</span></h1>
+      <ul class="nav-links">
+        <li onclick=hideSidebar()><a href=""></a>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> 
+        </a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Compétences</a></li>
+        <li><a href="#">Contact</a></li>
+        
+      </ul>
+
+      <ul>
+        <li class="hideOnMobile"><a href="#">Accueil</a></li>
+        <li class="hideOnMobile"><a href="#">À propos</a></li>
+        <li class="hideOnMobile"><a href="#">Projets</a></li>
+        <li class="hideOnMobile"><a href="#">Compétences</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </a></li>
+      </ul>      
+
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+   <div class="hero-text">
+      <p>Je suis <span>Israel</span>, Développeur en devenir passionné par le web et le design !</p>
+      <a href="#" class="btn">Voir mes projets</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="images/develop.jpg"  alt="Développeur au travail">
+    </div>
+    
+  </section>
+
+  <!-- À propos -->
+  <section class="about">
+    <h3>À propos</h3>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Je m'appelle <span>BOSSIKPONON</span>, passionné par la création de sites web modernes et interactifs.</p>
+        <p>Je suis actuellement étudiant(e) en <strong>développement web</strong> et j'améliore mes compétences en <strong>JavaScript</strong>, <strong>HTML</strong> et <strong>CSS</strong>.</p>
+        <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+        <a href="#" class="btn">Télécharger mon CV</a>
+      </div>
+      <div class="about-photo">
+        <img src="images/profil.jpg" alt="Photo de profil">
+      </div>
+    </div>
+  </section>
+ <!-- Projet -->
+  <section id="projets">
+  <h2>Mes Projets</h2>
+  <div class="projets-container">
+    <div class="projet-card">
+      <p>Portfolio.</p>
+      <span>HTML + CSS + JS</span><br>
+      <button>Voir</button>
+    </div>
+    <div class="projet-card">
+      <p>Jeu de calcul de Remise</p>
+      <span>HTML + CSS + JS</span><br>
+      <button>Voir</button>
+    </div>
+    <div class="projet-card">
+      <p>Mini jeu de Citation</p>
+      <span>HTML + CSS + JS</span><br>
+      <button>Voir</button>
+    </div>
+  </div>
+</section>
+<!-- Compétence -->
+ <section id="compétences">
+     <h2>Mes compétences</h2>
+ <div class="skills">
+    <!-- Soft Skills -->
+  <div class="card">
+    <h2>Soft Skills</h2>
+    <p>Gestion de projet</p>
+    <div class="bar"><div class="fill" data-width="80%"></div></div>
+    <p>Resolution de problème</p>
+    <div class="bar"><div class="fill" data-width="60%"></div></div>
+    <p>Adaptabilité</p>
+    <div class="bar"><div class="fill" data-width="90%"></div></div>
+  </div>
+
+  <!-- Hard Skills -->
+  <div class="cercle">
+    <h2>Hard Skills</h2>
+    <div class="circle-container">
+      <!-- Exemple 1 -->
+       <div class="item">
+      <svg id="svg2" width="120" height="120" viewBox="0 0 36 36">
+        <!-- Cercle de fond -->
+        <circle cx="18" cy="18" r="15" stroke="#ddd" stroke-width="3.5" fill="#f0f0f0"/>
+        <!-- Cercle animé -->
+        <circle class="progress" cx="18" cy="18" r="15"
+                stroke="turquoise" stroke-width="3.5" fill="none"
+                stroke-dasharray="100" stroke-dashoffset="100"
+                data-percent="95"/>
+        <!-- Texte -->
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="middle"  font-size="6" fill="#333">0%</text>
+      </svg>
+      <p>HTML</p>
+      </div>
+      <!-- Exemple 2 -->
+       <div class="item">
+      <svg id="svg2" width="120" height="120" viewBox="0 0 36 36">
+        <circle cx="18" cy="18" r="15" stroke="#ddd" stroke-width="3.5" fill="#f0f0f0"/>
+        <circle class="progress" cx="18" cy="18" r="15"
+                stroke="turquoise" stroke-width="3.5" fill="none"
+                stroke-dasharray="100" stroke-dashoffset="100"
+                data-percent="80"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="middle"  font-size="6" fill="#333">0%</text>
+      </svg>
+      <p>CSS</p>
+      </div>
+      <!-- Exemple 3 -->
+       <div class="item">
+      <svg id="svg2" width="120" height="120" viewBox="0 0 36 36">
+        <circle cx="18" cy="18" r="15" stroke="#ddd" stroke-width="3.5" fill="#f0f0f0"/>
+        <circle class="progress" cx="18" cy="18" r="15"
+                stroke="turquoise" stroke-width="3.5" fill="none"
+                stroke-dasharray="100" stroke-dashoffset="100"
+                data-percent="50"/>
+        <text x="18" y="18" text-anchor="middle"  dominant-baseline="middle" font-size="6" fill="#333">0%</text>
+      </svg>
+      <p>JavaScript</p>
+      </div>
+      <!-- Exemple 4 -->
+       <div class="item">
+      <svg id="svg2" width="120" height="120" viewBox="0 0 36 36">
+        <circle cx="18" cy="18" r="15" stroke="#ddd" stroke-width="3.5" fill="#f0f0f0"/>
+        <circle class="progress" cx="18" cy="18" r="15"
+                stroke="turquoise" stroke-width="3.5" fill="none"
+                stroke-dasharray="100" stroke-dashoffset="100"
+                data-percent="80"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="middle"  font-size="6" fill="#333">0%</text>
+      </svg>
+      <p>VS Code</p>
+      </div>
+
+    </div>
+  </div>
+</div> 
+    
+  
+    
+     
+    
+
+</section>
+
+
+ 
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Vous avez un <span>projet en tête ?</span><br>
+  N’hésitez pas à me <span>contacter</span></h2>
+  <form>
+   
+    <input type="text" placeholder="Votre prénom">
+    <input type="text" placeholder="Votre nom">
+    <input type="text" placeholder="Votre sujet">
+    <textarea placeholder="Écrivez votre message ici..."></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<!-- Footer-->
+ <div class="footer">
+  <div class="auth">
+    <p>Designed by <span>Israel</span> width HTML CSS JS</p>
+   </div>
+   <div class="ann">Tous droits réservés-2025</div>
+ </div>
+</body>
+</html>
